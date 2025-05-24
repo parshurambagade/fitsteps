@@ -1,12 +1,11 @@
+import { Text } from "@/app/(components)/ui/text";
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
-const Challenges = () => {
+export default function Challenges() {
   return (
-    <View>
-      <Text>Challenges</Text>
+    <View className={`flex-1 justify-center`}>
+      <Text className="text-custom-primary text-center my-20">Challenges</Text>
     </View>
   );
-};
-
-export default Challenges;
+}
