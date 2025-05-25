@@ -24,7 +24,7 @@ const CircularProgressContainer: React.FC<CircularProgressProps> = ({
 
   return (
     <View
-      className={`relative items-center justify-center self-center ${className}`}
+      className={`mt-12 mb-4 relative items-center justify-center self-center ${className}`}
     >
       <Svg width={radius * 2} height={radius * 2}>
         {/* Background Circle */}

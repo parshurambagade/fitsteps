@@ -1,21 +1,25 @@
+import TodaysActivityCard from "@/components/Home/TodaysActivityCard";
+import WeekStatusCard from "@/components/Home/WeekStatusCard";
 import { Text } from "@/components/ui/text";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import React from "react";
 import { View } from "react-native";
-import CircularProgressContainer from "../components/custom/CircularProgressContainer";
+import CircularProgressContainer from "../components/Home/CircularProgressContainer";
 
 export default function Index() {
   const todaysSteps = 3500;
   const dailyGoal = 7500;
   return (
-    <View className={`flex-1 justify-center`}>
+    <View className={`flex-1 justify-start gap-8 p-4`}>
       <CircularProgressContainer
         percentage={(todaysSteps * 100) / dailyGoal}
         radius={120}
-        className="w-60 h-60"
+        className="w-60 h-60 object-contain"
       >
         <StepCount todaysSteps={todaysSteps} dailyGoal={dailyGoal} />
       </CircularProgressContainer>
+      <WeekStatusCard />
+      <TodaysActivityCard />
     </View>
   );
 }
