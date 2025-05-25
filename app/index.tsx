@@ -1,10 +1,10 @@
-import TodaysActivityCard from "@/components/Home/TodaysActivityCard";
-import WeekStatusCard from "@/components/Home/WeekStatusCard";
+import CircularProgressContainer from "@/components/home/CircularProgressContainer";
+import TodaysActivityCard from "@/components/home/TodaysActivityCard";
+import WeekStatusCard from "@/components/home/WeekStatusCard";
 import { Text } from "@/components/ui/text";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import React from "react";
 import { View } from "react-native";
-import CircularProgressContainer from "../components/Home/CircularProgressContainer";
 
 export default function Index() {
   const todaysSteps = 3500;

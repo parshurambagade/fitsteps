@@ -173,6 +173,7 @@ module.exports = {
           accent: '#F2994A',
           bgDark: '#0A0E23',
           bgCard: '#11152A',
+          bgLight: '#1a2135',
           textPrimary: '#FFFFFF',
           textSecondary: '#A0A4B8',
           stroke: '#1D2239',

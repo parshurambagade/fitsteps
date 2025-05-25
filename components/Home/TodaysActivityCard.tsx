@@ -39,7 +39,7 @@ interface IActivityCard {
 
 const ActivityCard = ({ label, icon, value, unit }: IActivityCard) => {
   return (
-    <View className="border rounded-xl p-6 gap-4 border-custom-bgCard bg-[#161C2B]">
+    <View className="border rounded-xl p-6 gap-4 border-custom-bgCard bg-custom-bgLight">
       <View className="flex flex-row items-center gap-2">
         <Ionicons
           name={icon.name}
