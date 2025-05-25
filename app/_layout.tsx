@@ -1,16 +1,16 @@
+import {
+  Avatar,
+  AvatarFallbackText,
+  AvatarImage,
+} from "@/components/ui/avatar";
 import "@/global.css";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { BlurView } from "expo-blur";
 import { Tabs } from "expo-router";
 import { StyleSheet, View } from "react-native";
-import { Badge, BadgeIcon, BadgeText } from "./(components)/ui/badge";
-import { GluestackUIProvider } from "./(components)/ui/gluestack-ui-provider";
-import { FireIcon } from "./(components)/ui/icon";
-import {
-  Avatar,
-  AvatarFallbackText,
-  AvatarImage,
-} from "@/app/(components)/ui/avatar";
+import { Badge, BadgeIcon, BadgeText } from "../components/ui/badge";
+import { GluestackUIProvider } from "../components/ui/gluestack-ui-provider";
+import { FireIcon } from "../components/ui/icon";
 
 export default function RootLayout() {
   return (
@@ -31,13 +31,13 @@ export default function RootLayout() {
           headerLeft: () => (
             <View className="px-8 justify-center">
               <Avatar size="md">
-      <AvatarFallbackText>Jane Doe</AvatarFallbackText>
-      <AvatarImage
-        source={{
-          uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        }}
-      />
-    </Avatar>
+                <AvatarFallbackText>Jane Doe</AvatarFallbackText>
+                <AvatarImage
+                  source={{
+                    uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+                  }}
+                />
+              </Avatar>
             </View>
           ),
           headerRight: () => (
@@ -77,7 +77,7 @@ export default function RootLayout() {
         <Tabs.Screen
           name="index"
           options={{
-            title: "Home",
+            title: "",
             tabBarIcon: ({ color, focused }) => (
               <Ionicons
                 name={focused ? "home-sharp" : "home-outline"}

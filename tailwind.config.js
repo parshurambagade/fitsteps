@@ -189,9 +189,9 @@ module.exports = {
       },
       fontSize: {
         '2xs': '10px',
-        h1: ['28px', { lineHeight: '36px', fontWeight: '700' }],
-        h2: ['22px', { lineHeight: '30px', fontWeight: '600' }],
-        h3: ['18px', { lineHeight: '26px', fontWeight: '600' }],
+        h1: ['40px', { lineHeight: '36px', fontWeight: '700' }],
+        h2: ['32px', { lineHeight: '30px', fontWeight: '600' }],
+        h3: ['24px', { lineHeight: '26px', fontWeight: '600' }],
         base: ['16px', { lineHeight: '24px', fontWeight: '400' }],
         label: ['14px', { lineHeight: '20px', fontWeight: '500' }],
         caption: ['12px', { lineHeight: '16px', fontWeight: '400' }],
